@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>Vowel Index</title>
+        <body>
+            <button onclick="position();">Click Me</button>
+            <script type="text/javascript">c
+            function position()
+            {
+                var s=prompt("Enter the string");
+                var q=s;
+                q=q.toUpperCase();
+                var pos=0;
+                for(var i=0;i<q.length;i++)
+                {
+                    if(q[i]=='A'||q[i]=='E'||q[i]=='O'||q[i]=='I'||q[i]=='U')
+                    {
+                      pos=i+1;break;
+                    }
+                }
+                document.write(pos);
+            }
+            </script>
+        </body>
+    </head>
+</html>

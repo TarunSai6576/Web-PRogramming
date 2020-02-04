@@ -1,0 +1,28 @@
+<html>
+    <head><title>Reverse of a number</title></head>
+    <body>
+        <button onclick="reverse1();">Click me</button>
+        <script type="text/javascript">
+        // function reverse()
+        // {
+        //     var n=prompt("Enter a number");
+        //     var x= (parseInt(n.toString().split('').reverse().join('')));
+        //     document.write(x);
+        // }
+        function reverse1()
+        {
+            var n=prompt("Enter a number:");
+            var reverse=0;
+            var a=n;
+            while(a>0)
+            {
+                var digit=a%10;
+                reverse=(reverse*10)+digit;
+                a=parseInt(a/10);
+            }
+            document.write(reverse);
+        }
+        </script>
+    </body>
+
+</html>
