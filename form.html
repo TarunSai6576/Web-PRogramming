@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <title> USN Forms </title>
+    </head>
+    <body>
+        <form>
+            <label>USN:<br></label>
+            <input type="text" name="usn" id="usn"/><br>
+            Sem:<br>
+            <input type="text" name="sem" id="sem"/><br>
+            <input type="submit" value="Submit" onclick="check();"/>
+        </form>
+        <script type="text/javascript">
+        function check()
+        {
+            var regex=/^4[A-Z]{2}[0-9]{2}[A-Z]{2}[0-9]{3}$/
+            var is=/^4NI[0-9]{2}IS[0-9]{3}$/
+            var semester=/^[1-8]$/
+            if(usn.value.match(regex))
+            {
+                alert("Valid USN");
+                if(sem.value.match(semester))
+                {
+                    alert("Valid Sem");
+                }
+                else alert("Invalid Sem")
+            }
+            else alert("Invalid USN");
+        }
+        </script>
+    </body>
+</html>
+
